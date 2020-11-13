@@ -1,1 +1,1 @@
-port to windows32
+port to windows32 codeblocks project
