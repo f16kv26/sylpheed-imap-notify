@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="imap_notify_111" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/imap_notify_111" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="C:/msys32/home/eda/sylpheed-3.7.0/libsylph/" />
+					<Add directory="C:/msys32/home/eda/sylpheed-3.7.0/src/" />
+				</Compiler>
+				<Linker>
+					<Add library="..\libsylpheed-plugin-0-1.dll" />
+					<Add library="..\libsylph-0-1.dll" />
+					<Add library="..\intl.dll" />
+					<Add library="..\libgdk-win32-2.0-0.dll" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/imap_notify_111" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="C:/msys32/home/eda/sylpheed-3.7.0/libsylph/" />
+					<Add directory="C:/msys32/home/eda/sylpheed-3.7.0/src/" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="..\libsylpheed-plugin-0-1.dll" />
+					<Add library="..\libsylph-0-1.dll" />
+					<Add library="..\intl.dll" />
+					<Add library="..\libgdk-win32-2.0-0.dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-mms-bitfields" />
+			<Add option="-Wall" />
+			<Add directory="C:/Program Files/Gtk+/include" />
+			<Add directory="C:/Program Files/Gtk+/include/gtk-2.0" />
+			<Add directory="C:/Program Files/Gtk+/include/cairo" />
+			<Add directory="C:/Program Files/Gtk+/include/gdk" />
+			<Add directory="C:/Program Files/Gtk+/include/glib-2.0" />
+			<Add directory="C:/Program Files/Gtk+/lib/glib-2.0/include" />
+			<Add directory="C:/Program Files/Gtk+/include/pango-1.0" />
+			<Add directory="C:/Program Files/Gtk+/lib/gtk-2.0/include" />
+			<Add directory="C:/Program Files/Gtk+/include/atk-1.0" />
+			<Add directory="C:/Program Files/Gtk+/include/gdk-pixbuf-2.0" />
+		</Compiler>
+		<Linker>
+			<Add library="gtk-win32-2.0" />
+			<Add library="gobject-2.0" />
+			<Add library="glib-2.0" />
+			<Add directory="C:/Program Files/Gtk+/lib" />
+		</Linker>
+		<Unit filename="imap_notify.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
